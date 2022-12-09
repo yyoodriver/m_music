@@ -1,9 +1,10 @@
 <template>
   <router-view/>
+  <FooterMusic/>
 </template>
 
 <script setup>
-
+import FooterMusic from './components/item/FooterMusic.vue'
 </script>
 <style lang="less">
 * {
@@ -11,11 +12,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-.icon{
+
+.icon {
   width: .5rem;
   height: .5rem;
 }
-a{
+
+a {
   color: black;
 }
 </style>
