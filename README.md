@@ -8,7 +8,7 @@
 
 ### 前端
 
-> Vue3 + VantUI + Vite + Pinia(状态管理器)
+> Vue3 + VantUI + Vite + Pinia(状态管理器) + iconfont(图标库)
 
 ### 后端
 
