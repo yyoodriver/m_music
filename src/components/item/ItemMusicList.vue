@@ -28,7 +28,7 @@
           </div>
         </div>
         <div class="itemRight">
-          <svg class="icon bofang" aria-hidden="true" v-if="item.mv !=0">
+          <svg class="icon bofang" aria-hidden="true" v-if="item.mv !==0">
             <use xlink:href="#icon-shipin"></use>
           </svg>
           <svg class="icon liebiao" aria-hidden="true">
@@ -41,11 +41,18 @@
 </template>
 
 <script setup>
+import {useMusic} from "../../store/music.js"
+
 const props = defineProps({
   itemlist: null,
   subscribedCount: null
 })
 console.log(props)
+const musicStore = useMusic()
+const playMusic = (i) => {
+  musicStore.updatePlayList(props.itemlist)
+  musicStore.updatePlayListIndex(i)
+}
 </script>
 
 <style scoped lang="less">

@@ -24,7 +24,7 @@ onMounted(async () => {
   state.playlist = res.data.playlist
   // 获取歌单的歌曲
   let result = await getItemList(id)
-  console.log(result)
+  // console.log(result)
   state.itemList = result.data.songs
   // 防止页面刷新，数据丢失，将数据保存到sessionStorage中
   sessionStorage.setItem('itemDetail', JSON.stringify(state))

@@ -848,6 +848,11 @@ vue-router@4:
   dependencies:
     "@vue/devtools-api" "^6.4.5"
 
+vue3-marquee@^3.1.2:
+  version "3.1.2"
+  resolved "https://repo.huaweicloud.com/repository/npm/vue3-marquee/-/vue3-marquee-3.1.2.tgz#a168523944738b3bb59e60a154a94f8c3013c47d"
+  integrity sha512-qorZUAakbQqxHmgFBpunQ4WNcdgclG8XRTWjA9Rg+LSLIBWUFYL8LP7Ozf/CQPiZrFxP3PK2GtfN1uCDA/FoiA==
+
 vue@^3.2.41:
   version "3.2.45"
   resolved "https://repo.huaweicloud.com/repository/npm/vue/-/vue-3.2.45.tgz#94a116784447eb7dbd892167784619fef379b3c8"

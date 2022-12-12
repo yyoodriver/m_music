@@ -15,3 +15,12 @@ export const getMusicList = () => {
         url: "/personalized?limit=10"
     })
 }
+
+// 搜索
+export const getSearchMusic = (data) => {
+    return service({
+        method: "GET",
+        url: `/search?keywords=${data}`
+    })
+}
+
